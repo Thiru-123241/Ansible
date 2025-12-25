@@ -1,0 +1,5 @@
+- name: stopped the node server
+  hosts: frontend
+  tasks: # stopped the server1 need to check the status
+  - name: check the status
+    ansible.builtin.ping:
