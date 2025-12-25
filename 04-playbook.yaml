@@ -1,0 +1,5 @@
+- name: stopped the two servers for the test
+  hosts: frontend
+  tasks: # check connectivity for the two servers
+  - name:  check the two servers status we are able to reachable or not
+    ansible.builtin.ping:
