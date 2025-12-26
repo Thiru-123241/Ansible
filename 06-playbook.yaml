@@ -1,0 +1,11 @@
+- name: print messages
+  hosts: web
+  tasks:
+  - name: print hello world information
+    ansible.builtin.debug:
+      msg: "Hello world how are you what is going on"
+
+
+  - name: Added extra information
+    ansible.builtin.debug:
+      msg: "we are learning Ansible,Docker,Terraform"    
