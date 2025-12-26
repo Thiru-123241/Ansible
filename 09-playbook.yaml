@@ -1,0 +1,30 @@
+- name: print students name
+  hosts: local
+  connection: local
+  tasks:  # List of student data
+  - name: first student
+    ansible.builtin.debug:
+      msg: "The first student is from Ap name is Thirumalesh studying BE"
+
+  - name: second student
+    ansible.builtin.debug:
+      msg: "The second student is from TN name is shyam studying doctor"
+
+
+  - name: Third student
+    ansible.builtin.debug:
+      msg: "The Third student is from Telangana name is Manish studying MS"
+
+    
+
+  - name: Fourth Student
+    ansible.builtin.debug:
+      msg: "The fourth student is from karnataka name is santhosh studying Degree"
+
+
+
+
+
+
+
+
