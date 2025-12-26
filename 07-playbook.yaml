@@ -1,0 +1,10 @@
+- name: testing in two servers
+  hosts: web
+  tasks:
+  - name: printing message in two servers
+    ansible.builtin.debug:
+      msg: "Hello guys whatsup today how is doing"
+
+  - name: Adding another Message
+    ansible.builtin.debug:
+      msg: "Nothing we are already working on jira tickets"    
