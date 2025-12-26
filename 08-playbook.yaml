@@ -1,0 +1,7 @@
+- name: printing information for testing
+  hosts: local
+  connection: local
+  tasks: 
+  - name: check printing message
+    ansible.builtin.debug:
+      msg: "Hello we are testing this data on local server itself"
