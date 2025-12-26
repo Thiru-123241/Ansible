@@ -1,0 +1,7 @@
+- name: students required
+  hosts: local
+  connection: LOcal
+  tasks: 
+  - name: only one student data
+    ansible.builtin.debug:
+      msg: "we are collecting only the one student data"
