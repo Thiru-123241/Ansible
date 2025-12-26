@@ -1,0 +1,7 @@
+- name: print students name
+  hosts: Local
+  connection: local
+  tasks:  # List of student data
+  - name: second student
+    ansible.builtin.debug:
+      msg: "The second student is from TN name is shyam studying doctor"
