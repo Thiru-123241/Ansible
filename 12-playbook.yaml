@@ -1,6 +1,6 @@
 - name: students required
   hosts: local
-  connection: LOcal
+  connection: local
   tasks: 
   - name: only one student data
     ansible.builtin.debug:
