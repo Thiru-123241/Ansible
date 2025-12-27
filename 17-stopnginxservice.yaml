@@ -1,0 +1,9 @@
+- name: stop nginx service
+  hosts: backend
+  become: yes
+  tasks:
+  - name: nginx service to be stopped
+    ansible.builtin.service:
+      name: nginx
+      state: stopped
+      enabled: yes
