@@ -1,0 +1,29 @@
+- name: group1
+  hosts: local
+  connection: local
+  tasks: 
+  - name: list all the Red colours
+    ansible.builtin.debug:
+      msg: "we are collected all the red colours"
+
+
+
+  - name: list all the blue colours
+    ansible.builtin.debug:
+      msg: "we are collected all the blue colours"    
+
+
+
+- name: group2
+  hosts: local
+  connection: local
+  tasks: 
+  - name: list all the orange colours
+    ansible.builtin.debug:
+      msg: "we are collected all the orange colours"
+
+
+
+  - name: list all the black colours
+    ansible.builtin.debug:
+      msg: "we are collected all the black colours"   
