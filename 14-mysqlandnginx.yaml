@@ -1,0 +1,28 @@
+- name: install mysql and nginx
+  hosts: backend
+  become: yes  # become sudo access to install the mysql and nginx
+  tasks: 
+  - name: install nginx
+    ansible.builtin.package:
+      name: nginx
+      state: present
+
+  - name: run nginx 
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: yes   
+
+
+
+  - name: install mysql
+    ansible.builtin.package:
+      name: mysql
+      state: present
+
+
+  - name: Run mysql
+    ansible.builtin.service:
+      name: mysql
+      state: started
+      enabled: yes        
