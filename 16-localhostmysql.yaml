@@ -4,7 +4,7 @@
   become: yes
   tasks:
   - name: install mysql
-    ansible.built.package:
+    ansible.builtin.package:
       name: mysql-server
       state: present
 
