@@ -1,6 +1,6 @@
 - name: installing nginx on local
   hosts: local
-  become: yes
+  become: yes   # becomes sudo access to install the nginx
   tasks:
   - name: install nginx
     ansible.builtin.package:
